@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мәзір - Menu & Calories</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-apple-alt"></i> Menu & Calories</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="../index.html"><i class="fas fa-home"></i> Басты бет</a></li>
+                    <li><a href="menu.html" class="active"><i class="fas fa-utensils"></i> Мәзір</a></li>
+                    <li><a href="calories.html"><i class="fas fa-fire"></i> Калория</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> Біз туралы</a></li>
+                    <li><a href="blog.html"><i class="fas fa-blog"></i> Блог</a></li>
+                    <li><a href="contact.html"><i class="fas fa-address-book"></i> Контакты</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero" style="background: linear-gradient(135deg, #e67e22, #d35400);">
+            <div class="container">
+                <h2><i class="fas fa-utensils"></i> Ас мәзірлері</h2>
+                <p>Денсаулығыңызға сәйкес апталық ас мәзірлерін таңдаңыз</p>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Барлығы</button>
+                    <button class="filter-btn" data-filter="breakfast">Таңғы ас</button>
+                    <button class="filter-btn" data-filter="lunch">Түскі ас</button>
+                    <button class="filter-btn" data-filter="dinner">Кешкі ас</button>
+                    <button class="filter-btn" data-filter="diet">Диеталық</button>
+                </div>
+
+                <div class="menu-grid">
+                    <div class="menu-card" data-category="breakfast">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Таңғы ас">
+                        </div>
+                        <div class="menu-info">
+                            <h3>Таңғы ас комплекті</h3>
+                            <p>Жұмыртқа, жарма, жаңа піскен жемістер</p>
+                            <div class="menu-details">
+                                <span><i class="fas fa-fire"></i> 450 калория</span>
+                                <span><i class="fas fa-clock"></i> 20 мин</span>
+                            </div>
+                            <button class="btn-add">Мәзірге қосу</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-card" data-category="lunch">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Түскі ас">
+                        </div>
+                        <div class="menu-info">
+                            <h3>Түскі ас комплекті</h3>
+                            <p>Курица гриль, күріш, жасыл салат</p>
+                            <div class="menu-details">
+                                <span><i class="fas fa-fire"></i> 650 калория</span>
+                                <span><i class="fas fa-clock"></i> 35 мин</span>
+                            </div>
+                            <button class="btn-add">Мәзірге қосу</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-card" data-category="dinner">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Кешкі ас">
+                        </div>
+                        <div class="menu-info">
+                            <h3>Кешкі ас комплекті</h3>
+                            <p>Балық, көкөністер, кішкене картоп</p>
+                            <div class="menu-details">
+                                <span><i class="fas fa-fire"></i> 550 калория</span>
+                                <span><i class="fas fa-clock"></i> 30 мин</span>
+                            </div>
+                            <button class="btn-add">Мәзірге қосу</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-card" data-category="diet">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Диеталық">
+                        </div>
+                        <div class="menu-info">
+                            <h3>Диеталық салат</h3>
+                            <p>Жасыл жапырақтар, авокадо, семизалар</p>
+                            <div class="menu-details">
+                                <span><i class="fas fa-fire"></i> 320 калория</span>
+                                <span><i class="fas fa-clock"></i> 15 мин</span>
+                            </div>
+                            <button class="btn-add">Мәзірге қосу</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Menu & Calories. Барлық құқықтар қорғалған.</p>
+            <p>Контакты: <a href="mailto:info@menucalories.kz">info@menucalories.kz</a> | <a href="tel:+77771234567">+7 777 123 45 67</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('show');
+        });
+
+        // Фильтрация меню
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                document.querySelectorAll('.menu-card').forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
